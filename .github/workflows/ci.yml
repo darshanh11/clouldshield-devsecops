@@ -34,7 +34,7 @@ jobs:
         run: docker build -t cloudshield-api:ci ./app
 
       - name: Trivy vulnerability scan
-        uses: aquasecurity/trivy-action@v0.350
+        uses: aquasecurity/trivy-action@v0.35.0
         with:
           image-ref: cloudshield-api:ci
           format: table
